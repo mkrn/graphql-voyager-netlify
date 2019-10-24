@@ -1,12 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import * as React from "react";
+import * as ReactDOM from "react-dom";
+import { Voyager } from "graphql-voyager";
+import fetch from "isomorphic-fetch";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+function introspectionProvider(query) {
+  return fetch(process.env.REACT_APP_GRAPHQL_URL, {
+    method: "post",
+    headers: {
+      "Content-Type": "application/json",
+      "X-API-KEY": process.env.REACT_APP_GRAPHQL_API_KEY
+    },
+    body: JSON.stringify({ query: query })
+  }).then(response => response.json());
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+  <Voyager
+    workerURI={process.env.PUBLIC_URL + "/voyager.worker.js"}
+    introspection={introspectionProvider}
+  />,
+  document.getElementById("root")
+);
