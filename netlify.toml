@@ -1,3 +1,7 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
 [template.environment]
   REACT_APP_GRAPHQL_URL = "URL of your GraphQL instance"
   REACT_APP_GRAPHQL_API_KEY = "API Key (optional) Used in X-API-KEY Header"
