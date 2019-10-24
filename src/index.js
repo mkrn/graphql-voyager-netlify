@@ -19,5 +19,5 @@ ReactDOM.render(
     workerURI={process.env.PUBLIC_URL + "/voyager.worker.js"}
     introspection={introspectionProvider}
   />,
-  document.getElementById("root")
+  document.getElementById("voyager")
 );
