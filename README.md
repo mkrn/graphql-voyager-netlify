@@ -1,5 +1,7 @@
 # Graphql-Voyager netlify
 
+[![](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mkrn/graphql-voyager-netlify)
+
 Instantly deploy Graphql-voyager, and point it to your GraphQL endpoint.
 
 ## Environment variables 
@@ -12,8 +14,8 @@ REACT_APP_GRAPHQL_API_KEY is passed to `X-API-KEY` HTTP header.
 
 ## Works with 
 
-[x] Netlify
-[x] AWS AppSync
+- Netlify
+- AWS AppSync
 
 ## License 
 MIT 
