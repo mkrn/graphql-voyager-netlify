@@ -17,5 +17,9 @@ REACT_APP_GRAPHQL_API_KEY is passed to `X-API-KEY` HTTP header.
 - Netlify
 - AWS AppSync
 
+## Password-protect
+
+Password protect in Netlify: Go to Access Control => Password / JWT secret. Edit Password.
+
 ## License 
 MIT 
