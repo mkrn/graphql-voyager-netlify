@@ -1,8 +1,8 @@
-# Graphql-Voyager netlify
+# Graphql-Voyager on Netlify 🛰️ 
 
 [![](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mkrn/graphql-voyager-netlify)
 
-Instantly deploy Graphql-voyager, and point it to your GraphQL endpoint.
+Instantly deploy the amazing [Graphql-Voyager](https://github.com/APIs-guru/graphql-voyager) to netlify, and explore your GraphQL schema!
 
 ## Environment variables 
 ```
